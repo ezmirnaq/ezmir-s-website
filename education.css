@@ -1,0 +1,70 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5dc; /* Beige background */
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background-color: #d2b48c; /* Tan */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #d2b48c; /* Tan */
+  text-align: center;
+}
+
+ul li::before {
+  content: "🏫 "; /* School emoji */
+  font-size: 1.5em;
+  color: #deb887; /* Burlywood */
+}
+
+img {
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%; /* Responsive size */
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #d2b48c; /* Tan */
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}

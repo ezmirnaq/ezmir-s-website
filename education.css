@@ -1,0 +1,119 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5dc; /* Beige background */
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background-color: #d2b48c; /* Tan */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #d2b48c; /* Tan */
+  text-align: center;
+  cursor: pointer;
+}
+
+ul li::before {
+  content: "🏫 "; /* School emoji */
+  font-size: 1.5em;
+  color: #deb887; /* Burlywood */
+}
+
+ul li.active::before {
+  content: "🏫 "; /* Active school emoji */
+  font-size: 1.5em;
+  color: #8B4513; /* SaddleBrown */
+}
+
+img {
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%; /* Responsive size */
+  display: none; /* Hide images initially */
+}
+
+p.description {
+  display: none; /* Hide descriptions initially */
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #d2b48c; /* Tan */
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Lightbox effect */
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Scroll to top button */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d2b48c; /* Tan */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #8B4513; /* Darker brown */
+}
